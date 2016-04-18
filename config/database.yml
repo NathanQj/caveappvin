@@ -11,7 +11,7 @@ default: &default
 
 development:
   adapter: postgresql
-  database: caveavin_development
+  database: caveappvin_development
   host: localhost
   username: <%= ENV['DB_USERNAME'] %>
 
@@ -20,10 +20,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: caveavin_test
+  database: caveappvin_test
 
 production:
   <<: *default
-  database: caveavin_production
-  username: caveavin
+  database: caveappvin_production
+  username: caveappvin
   password: <%= ENV['CAVEAVIN_DATABASE_PASSWORD'] %>
